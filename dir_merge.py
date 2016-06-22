@@ -22,6 +22,7 @@ print("Contents of d2 are...")
 pprint.pprint(files_in_d2)
 
 common_files = list(set(files_in_d1).intersection(files_in_d2))
+unique_files=  list(set(files_in_d1)-set(files_in_d2))
 print("Common Files are ")
 pprint.pprint(common_files)
 if len(common_files) > 0:
